@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tiempo Dojo</title>
+</head>
+<body>
+    <header>
+        <!-- header: logo y menu -->
+        <nav class="bar_titulo">
+            <span class="logo">DojoWeather</span>
+            <ul class="nav_menu">
+                <li>Burbank</li>
+                <li>Chicago</li>
+                <li>Dallas</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- cuerpo -->
+        <article>
+            <!-- linea de la ciudad -->
+            <h1 class="texto_ciudad">San Jose</h1>
+            <div class="cont_temperatura"> 
+                <p>show tempertaure in </p>
+                <select class="sel_temp" name="tipo_temp" id="tipo_temp">
+                    <option value="1">°C</option>
+                    <option value="2">°F</option>
+                </select>
+            </div>
+        </article>
+        <div class="linea_inferior"></div>
+        <article>
+            <!-- pronostrico -->
+            <section class="cuadro_pronostico cuadro_pro_izq">
+                <!-- hoy -->
+                <h2>Today</h2>
+                <img class="img_tiempo" src="assets/some_rain.png" alt="some_rain">
+                <p>some rain</p>
+                <div class="cuadro_temp">
+                    <span class="temp_max"></span>
+                    <span class="temp_min"></span>
+                </div>
+            </section>
+            <section class="cuadro_pronostico cuadro_pro_centro">
+                <!-- mañana -->
+                <h2>Tomorrow</h2>
+                <img class="img_tiempo" src="assets/some_sun.png" alt="some_sun">
+                <p>some sun</p>
+                <div class="cuadro_temp">
+                    <span class="temp_max"></span>
+                    <span class="temp_min"></span>
+                </div>
+            </section>
+            <section class="cuadro_pronostico cuadro_pro_centro">
+                <!-- viernes -->
+                <h2>Friday</h2>
+                <img class="img_tiempo" src="assets/some_clouds.png" alt="some_coulds">
+                <p>some couls</p>
+                <div class="cuadro_temp">
+                    <span class="temp_max"></span>
+                    <span class="temp_min"></span>
+                </div>
+            </section>
+            <section class="cuadro_pronostico cuadro_pro_der">
+                <!-- sabado -->
+                <h2>Saturday</h2>
+                <img class="img_tiempo" src="assets/some_sun.png" alt="some_sun">
+                <p>some sun</p>
+                <div class="cuadro_temp">
+                    <span class="temp_max"></span>
+                    <span class="temp_min"></span>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <!-- recuadro final -->
+        <div class="cuadro_final">
+            <img src="assets/cookie.png" alt="cookie">
+            <div>
+                <h2>Stop! Coockie time</h2>
+                <p class="parrafo_final">We use Coockies (sdly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="">Read more...</a></p>
+            </div>
+            <button class="buton_coockie">I Accept</button>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
