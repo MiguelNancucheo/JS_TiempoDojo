@@ -43,12 +43,13 @@ function muestra_temperatura (opc) {
 }
 //cargando el evento click en los link
 var elements = document.querySelectorAll('li');
-
-//para que boton eliminee el bloque coockid
-var el_cook = document.querySelector('.buton_coockie');
 for (let index = 0; index < elements.length; index++) {
     elements[index].addEventListener("click", msg_alerta);
 }
+
+//para que boton eliminee el bloque coockid
+var el_cook = document.querySelector('.buton_coockie');
+el_cook.addEventListener("click", elim_cuadro);
 
 //para seleccion el elemento select
 var el_select = document.querySelector('select');
